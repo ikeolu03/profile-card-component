@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1rem;
+    color: hsl(229, 23%, 23%);
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+/* Layout */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: hsl(0, 0%, 100%);
+    width: 375px;
+    max-width: 90%;
+    border-radius: 1em;
+    overflow: hidden;
+}  
+
+.flex-group{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid hsl(0, 0%, 90%);
+    padding: 1em 0;
+}
+
+.card-top{
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+}
+
+.image-container{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -50px auto -30px auto;
+    border: 5px solid #fff;
+}
+
+.profilename-container{
+    margin-bottom: .5em;
+}
+
+.card-body{
+    text-align: center;
+    padding: 3em 0 2em;
+}
+
+.stats-container{
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Typography */
+
+img{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+p{
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+.age{
+    margin-left: .5em;
+}
+
+.name,
+.age{
+    display: inline-block;
+}
+
+.name,
+.stats{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.stats{
+    margin-bottom: .2em;
+}
+
+.stats-id{
+    font-size: .7rem;
+    letter-spacing: .1em;
+}
